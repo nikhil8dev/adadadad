@@ -20,7 +20,7 @@ logBtn.addEventListener('click',e =>{
    const  mail = email.value;
    const  password = pass.value;
    const auth = firebase.auth();
-
+  
    const promise = auth.signInWithEmailAndPassword(mail, password)
    promise
    .catch(e => console.log(e.message))
